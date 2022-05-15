@@ -6,8 +6,6 @@ const selectRecipes = (exclusions) => {
 	if (exclusions) {
 		let individualIngredients = exclusions.replace('_', ' ').split(',');
 
-		console.log(individualIngredients);
-
 		let filtered = recipes.filter((recipe) => {
 			let count = 0;
 			recipe.ingredients.forEach((ingredient) => {

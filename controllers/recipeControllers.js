@@ -27,7 +27,6 @@ const getRecipeById = async (req, res) => {
 		if (Object.keys(recipe.recipe).includes('id')) {
 			res.status(200).send(recipe);
 		} else {
-			console.log(recipe);
 			throw new Error('recipe not found');
 		}
 	} catch (error) {
